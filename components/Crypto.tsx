@@ -21,18 +21,18 @@ interface Props {
 
 function Crypto({ crypto }: Props) {
   const colorClassName = crypto.prevPrice ? crypto.price > crypto.prevPrice 
-  ? "text-green-600" 
-  : "text-red-500"
-  : "text-gray-900" ;
+  ? "text-green-400" 
+  : "text-red-400"
+  : "text-white" ;
 
   return (
     // <div className="max-w p-6 bg-white border backdrop-blur-sm	 border-gray-100 rounded-lg shadow-lg"></div>
-    <div className="max-w p-6 backdrop-blur-md bg-gray-700 border-gray-100 rounded-lg shadow-lg">
-      <img className="w-10 h-10 mb-2 rounded-full" src={`https://s2.coinmarketcap.com/static/img/coins/128x128/${crypto.iconCode}.png`} />
-
-      <h5 className="mb-1 text-2xl font-semibold tracking-tight text-white">
+    <div className=" p-6 backdrop-blur-md bg-gray-700 border-gray-100 rounded-3xl shadow-xl">
+      <img className="h-[70px] mb-2 rounded-full transition ease-in-out delay-50 hover:brightness-125" src={`https://s2.coinmarketcap.com/static/img/coins/128x128/${crypto.iconCode}.png`} />
+      <a className="inline-flex items-center hover:text-blue-200 mt-6 mb-1 text-2xl font-semibold tracking-tight text-white" href={crypto.explorer} target="_blank" rel="noreferrer">
         {crypto.name}
-      </h5>
+    </a>
+    <br />
       {crypto.price ? (
         <>
           <span className={colorClassName} title={`${crypto.price}`}>
@@ -50,7 +50,8 @@ function Crypto({ crypto }: Props) {
       ) : (
         <Loader/>
       )}
-      <a className="inline-flex items-center text-blue-600 mt-6" href={crypto.explorer} target="_blank" rel="noreferrer"> Explorer
+      <a className="inline-flex items-center text-blue-300 mt-6 text-sm" href={crypto.explorer} target="_blank" rel="noreferrer"> 
+      Visit
       <svg
   className="w-5 h-5 ml-2"
   fill="currentColor"
