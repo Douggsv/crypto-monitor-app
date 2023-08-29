@@ -11,7 +11,7 @@ export default function Status({ label, value }: Props) {
       <p className="flex-1 text-sm text-gray-400">
         {label}
       </p>
-      <p className="font-semibold text-gray-500">
+      <p className="font-semibold text-sm text-gray-300">
         {value}
       </p>
     </div>
