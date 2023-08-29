@@ -9,6 +9,8 @@ const Home: NextPage = () => {
   return (
     <NoSSR>
       <Layout>
+        {/* <div className="text-lg font-semibold leading-8 items-center pt-4 item-center mx-auto w-full drop-shadow-2xl p-4 bg-gray-900 text-gray-100 text-center">
+          CryptoMonitor</div> */}
         <div className="py-0 bg-gradient-to-r from-gray-500 to-gray-900 ">
           <div className="mx-auto max-w-7xl px-2 lg:px-4">
             <div className="text-center py-5 mb-10">
@@ -18,7 +20,7 @@ const Home: NextPage = () => {
               </h2>
               <p className="mt-2 text-3xl font-bold tracking-tighter text-white drop-shadow-lg sm:text-4xl">
                 {/* OJO LO DE TRACKING */}
-                Digital money for digital world.
+                A decentralized world, much better.
               </p>
               <p className="mx-auto mt-6 max-w-2xl md:text-lg xl:text 2xl:text leading-6 text-gray-200 sm:text-sm">
               Real-time cryptocurrency trackers can be a useful tool for cryptocurrency 
