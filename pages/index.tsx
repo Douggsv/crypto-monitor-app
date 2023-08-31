@@ -20,7 +20,7 @@ const Home: NextPage = () => {
               </h2>
               <p className="mt-2 text-3xl font-bold tracking-tighter text-white drop-shadow-lg sm:text-4xl">
                 {/* OJO LO DE TRACKING */}
-                A decentralized world, much better. TEST
+                A decentralized world, much better.
               </p>
               <p className="mx-auto mt-6 max-w-2xl md:text-lg xl:text 2xl:text leading-6 text-gray-200 sm:text-sm">
               Real-time cryptocurrency trackers can be a useful tool for cryptocurrency 

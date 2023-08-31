@@ -24,10 +24,10 @@ function Crypto({ crypto }: Props) {
   ? "text-green-400" 
   : "text-red-400"
   : "text-white" ;
-
+// OJITO CON ESTO PAPA
   return (
     // <div className="max-w p-6 bg-white border backdrop-blur-sm	 border-gray-100 rounded-lg shadow-lg"></div>
-    <div className=" p-6 backdrop-blur-md bg-gray-700 border-gray-100 rounded-3xl shadow-xl">
+    <div className=" p-6 backdrop-blur-lg bg-gray-700 border-gray-100 rounded-3xl shadow-xl">
       <img className="h-[70px] mb-2 rounded-full transition ease-in-out delay-50 hover:brightness-125" src={`https://s2.coinmarketcap.com/static/img/coins/128x128/${crypto.iconCode}.png`} />
       <a className="inline-flex items-center hover:text-blue-200 mt-6 mb-1 text-2xl font-semibold tracking-tight text-white" href={crypto.explorer} target="_blank" rel="noreferrer">
         {crypto.name}
